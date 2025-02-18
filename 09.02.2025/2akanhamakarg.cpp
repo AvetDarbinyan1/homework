@@ -4,7 +4,11 @@ int main(){
 	int number = 0;
 	int sum = 0;
 	int b = 0;
+<<<<<<< HEAD
 	std::cout<<"nermuteq tiv tasakan hamakargic"<<std::endl;
+=======
+	std::cout<<"enmuteq tiv tasakan hamakargic"<<std::endl;
+>>>>>>> 68c22f7 (.)
 	std::cin>>number;
 	
 
