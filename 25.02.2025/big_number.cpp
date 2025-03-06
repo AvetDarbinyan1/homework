@@ -1,5 +1,5 @@
 #include<iostream>
-void big_small(){
+void big_number(){
 	int a = 0;
 	int b = 0;
 	std::cout<<"arajin tiv@";'\n';
