@@ -1,6 +1,6 @@
 #include <iostream>
 
-const int size = 30;
+const int size = 2;
 int grades[size];
 
 
@@ -18,8 +18,8 @@ void calculateAverag(){
 	for(int i = 0;i < size;i++){
 	sum += grades[i];
 	}	
-		std::cout<<"Averag - ";'\n';
-		std::cout<<sum/size<<std::endl;
+//		std::cout<<"Averag - ";'\n';
+//		std::cout<<sum/size<<std::endl;
 	
 }
 
@@ -30,7 +30,7 @@ int findHighestGrade() {
             a = i;
         }
     }
-    std::cout<<"HighestGrade - "<<grades[a]<<std::endl;
+  //  std::cout<<"HighestGrade - "<<grades[a]<<std::endl;
     return grades[a];
 }
 int findLowestGrade(){
@@ -40,16 +40,31 @@ int findLowestGrade(){
             a = i;
         }
     }
-    std::cout << "LowestGrads - " << grades[a] << std::endl;
+//    std::cout << "LowestGrads - " << grades[a] << std::endl;
     return grades[a]; 
 
 }
+double sortGrades(){
+	int d = 0;
+	for(int i = 0;i < size;i++){
+		for(int j = 0;j < size;j++){
 
-
+			std::cout<<i<<";;i;;";
+			std::cout<<j<<";;j;;";
+			if(grades[i] > grades[j]){
+			d = grades[j];
+			grades[j] = grades[i];
+			grades[i] = d;
+			std::cout<<d;
+			}
+		}
+	}return(0);
+}
 int main() {
     inputGrades();
     calculateAverag();
     findHighestGrade();
     findLowestGrade();
+    sortGrades();
     return 0;
 }
