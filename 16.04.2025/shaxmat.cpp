@@ -5,8 +5,7 @@ int c = 0;
 int d = 0;
 void print(){
 	std::cout<<"enter qanak"<<std::endl;
-	std::cin>>c;
-	int mas[c][c];
+	std::cin>>c;։ո
 	for(int i = 0;i < c;i++){
 		std::cout<<" "<<std::endl;
 		for(int j = 0;j < c;j++){
